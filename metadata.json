@@ -1,0 +1,6 @@
+{
+  "name": "Fahrschule Astrid Dietz",
+  "description": "Moderne Webseite für die Fahrschule Astrid Dietz in Gründau",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
