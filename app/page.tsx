@@ -83,12 +83,13 @@ export default function Home() {
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?mute=1" 
                 title="Fahrschule Astrid Dietz" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover p-0"
+                loading="lazy"
               ></iframe>
             </div>
 
