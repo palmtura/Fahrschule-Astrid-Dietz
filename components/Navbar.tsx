@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Menu, X, Car } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,15 +22,13 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="#start" className="flex items-center gap-2">
-              <div className="relative w-32 h-16">
-                <img 
+              <div className="relative w-48 h-16">
+                <Image 
                   src="/logo.png" 
-                  alt="Fahrschule Astrid Dietz" 
-                  className="w-full h-full object-contain"
-                  onError={(e) => {
-                    // Fallback visually if image not found
-                    (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMTAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2QxZDVkYiIgLz48dGV4dCB4PSIxNTAiIHk9IjU1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM2YjcyODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvZ288L3RleHQ+PC9zdmc+';
-                  }}
+                  alt="Fahrschule Astrid Dietz"
+                  fill
+                  className="object-contain object-left"
+                  priority
                 />
               </div>
             </Link>
